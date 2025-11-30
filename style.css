@@ -1,10 +1,57 @@
-/* Body & Fonts */
+
 body {
     font-family: Inter, system-ui, Arial, sans-serif;
     background: #f0f2f5;
     margin: 0;
     padding-bottom: 40px;
 }
+ body {
+     background:#f0f2f5;
+     font-family: Inter, system-ui, Arial, sans-serif;
+     padding-bottom:40px;
+ }
+
+    .main-nav { 
+        background:#00bfff;
+     }
+    .navbar-brand{
+         color:#fff; 
+        font-weight:700 
+    }
+    .post-card { 
+        display:flex;
+         gap:1rem; 
+         padding:1rem; 
+         border-radius:10px; 
+         background:#fff;
+          box-shadow:0 6px 12px rgba(0,0,0,0.06); 
+          margin-bottom:1rem;
+           align-items:flex-start; 
+        }
+    .post-image {
+        width:160px; 
+        height:120px;
+         object-fit:cover;
+          border-radius:8px;
+         }
+    .post-content h3 {
+        margin:0; 
+        font-size:1.1rem; 
+    }
+    .post-actions button {
+         margin-right:.5rem; 
+        }
+    .post-form-container {
+         background:#fff
+         ; padding:1rem; border-radius:10px;
+          box-shadow:0 6px 12px rgba(0,0,0,0.06);
+           margin-bottom:1rem;
+         }
+    @media (max-width:576px){
+         .post-card{ flex-direction:column }
+          .post-image{ width:100%; height:200px } 
+        }
+  
 
 /* Navbar */
 .navbar {
